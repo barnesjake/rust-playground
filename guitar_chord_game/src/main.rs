@@ -1,5 +1,3 @@
-use std::{cmp::Ordering, io};
-
 use rand::Rng;
 
 /*
@@ -13,6 +11,7 @@ use rand::Rng;
 
 fn main() {
     println!("Hello, welcome to chord printer!");
+    print_spacing();
     /* 
         Modify this value to increase the time between chords being printed
         e.g. 2.5 for 2.5 seconds, 4.0 for 4 seconds.
@@ -28,6 +27,7 @@ fn main() {
             3 => print_d(),
             _ => print_e()
         }
+        print_spacing();
     }
 
 }
@@ -36,6 +36,11 @@ fn sleep_for_x_seconds(second_interval: f32) {
     use std::{thread, time};
     let sleep_delay = time::Duration::from_secs_f32(second_interval);
     thread::sleep(sleep_delay);
+}
+
+fn print_spacing() {
+    println!("======================");
+    println!("======================");
 }
 
 fn print_a() {
