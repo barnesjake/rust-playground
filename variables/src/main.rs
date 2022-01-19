@@ -9,7 +9,7 @@ fn main() {
     println!("The value of x is {}", x);
 
     // rust convention for const is all upercase naming
-    const THREE_HOURS_IN_SECONDS: u32 = 3 * 60 * 60;
+    // const THREE_HOURS_IN_SECONDS: u32 = 3 * 60 * 60;
 
 
     let y = 5;
